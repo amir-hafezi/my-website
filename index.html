@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Amir Hafezi - Mechanical Engineer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Add this style for the intro section with background transparency */
+            #intro {
+                position: relative;
+                width: 100%;
+                min-height: 100vh;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url('images/pic01.jpg') no-repeat center center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                padding: 2rem;
+            }
+
+            #intro h1 {
+                font-size: 3rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            #intro p {
+                font-size: 1.5rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+            }
+
+            /* Section styles */
+            section {
+                padding: 4rem 0;
+                text-align: center;
+            }
+
+            section h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+                color: #333;
+            }
+
+            section h3 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                color: #444;
+            }
+
+            section p, section ul {
+                font-size: 1.2rem;
+                line-height: 1.8;
+                color: #666;
+            }
+
+            /* Highlight Section */
+            .highlight-section p {
+                font-size: 1.6rem;
+                line-height: 1.8;
+                margin-bottom: 1.5rem;
+                color: #fff;
+            }
+
+            .highlight-section strong {
+                color: #ffd700;
+                font-weight: 700;
+            }
+
+            .highlight-section p:hover {
+                transition: 0.3s;
+                transform: scale(1.05);
+                color: #fff;
+            }
+
+            /* Button styling */
+            .button {
+                padding: 0.8rem 2rem;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-size: 1rem;
+                background-color: #ff4500;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .button:hover {
+                background-color: #ff5733;
+            }
+
+            /* Publications and Experience styles */
+            .post, .publication, .ta-experience {
+                background: #f0f0f0;
+                padding: 2rem;
+                border-radius: 8px;
+                margin-bottom: 2rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            }
+
+            .post img, .publication img {
+                border-radius: 8px;
+                margin-bottom: 1rem;
+                width: 100%;
+                height: auto;
+            }
+
+            /* Slideshow styles */
+            .slideshow-container {
+                position: relative;
+                width: 100%;
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            /* Footer Styles */
+            #footer {
+                background-color: #222;
+                color: #fff;
+                padding: 3rem 0;
+                text-align: center;
+            }
+
+            .footer-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .contact-info {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 2rem;
+                align-items: center;
+            }
+
+            .contact-item {
+                flex: 1;
+                min-width: 200px;
+                text-align: center;
+            }
+
+            .contact-item h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                color: #ffd700;
+            }
+
+            .contact-item p, .contact-item a {
+                color: #fff;
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            .contact-item a:hover {
+                text-decoration: underline;
+            }
+
+            .social-links h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                color: #ffd700;
+            }
+
+            .icons {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .icons li a {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+
+            .icons li a:hover {
+                color: #ffd700;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+
+			<!-- Intro -->
+			<div id="intro">
+				<h1>Amir Hafezi<br />Mechanical Engineer</h1>
+				<div class="highlight-section">
+					<p><strong>Shaping Tomorrow's Engineering:</strong> Expertise in <strong>3D Design, Robotics</strong>, and <strong>Automation</strong>.</p>
+					<p><strong>Tools of the Trade:</strong> Proficient in <strong>CATIA</strong>, <strong>SolidWorks</strong>, <strong>Machine Learning</strong>, and rapid prototyping.</p>
+					<p><strong>Precision in Action:</strong> Specializing in <strong>reverse engineering</strong>, <strong>automation</strong>, and <strong>CNC</strong> mastery.</p>
+				</div>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Explore My Work</a></li>
+				</ul>
+			</div>
+
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Amir Hafezi</a>
+            </header>
+
+            <!-- Nav -->
+            
+                <ul class="icons">
+					<li><a href="mailto:amirhafezi@isu.edu" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+					<li><a href="mailto:amir.hafezi78@yahoo.com" class="icon fa-envelope"><span class="label">Yahoo Email</span></a></li>
+					<li><a href="https://www.linkedin.com/in/amir-hafezi/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+							
+				
+            </nav>
+
+            <!-- Main Content -->
+            <div id="main">
+
+                <!-- Featured Post (Experience) -->
+                <section id="experience">
+                    <header class="major">
+                        <h2>Experience</h2>
+                    </header>
+
+					<!-- Teaching Assistant Experience -->
+					<article class="ta-experience">
+						<h3>Teaching Assistant - Idaho State University (Spring 2024, Fall 2024)</h3>
+						<ul>
+							<li>Taught and supported over 30 students in SolidWorks.</li>
+							<li>Managed the 3D printing lab, ensuring accurate production of prototypes on time, improving lab efficiency by 20%.</li>
+							<li>Assisted in developing courses on Machine Learning and Nvidia Computer Vision for robotics applications.</li>
+						</ul>
+						<!-- Centered and doubled-size image -->
+						<img src="images/3dprinter.jpg" alt="3D Printing Lab" class="scaled-image" />
+					</article>
+
+					<!-- CSS for centering and scaling the image without overlapping -->
+					<style>
+						.scaled-image {
+							display: block;
+							margin: 1.5rem auto;  /* Center the image horizontally */
+							width: 100%;          /* Double the size by adjusting width */
+							max-width: 600px;      /* Set a max width to control the size */
+							height: auto;          /* Maintain the aspect ratio */
+						}
+					</style>
+
+
+
+                    <!-- Research Assistant -->
+                    <article class="post">
+                        <header class="major">
+                            <h3>Research Assistant - Idaho State University Robotics Lab (Fall 2023)</h3>
+                        </header>
+                        <li>Enhanced a commercial Dog Robot with sensors and custom software for security applications, funded by Idaho National Laboratory.</li>
+                        <a href="#" class="image main"><img src="images/cose-robot_3079.jpg" alt="Dog Robot Project" /></a>
+                    </article>
+                </section>
+
+                <!-- Projects -->
+                <section id="projects">
+                    <header class="major">
+                        <h2>Projects</h2>
+                    </header>
+
+                    <!-- Project: Motorcycle Design -->
+                    <article class="post">
+                        <header class="major">
+                            <h3>Motorcycle Design</h3>
+                        </header>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="assets/images/1596890103841.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/images/1596890107314.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/images/1596890110440.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/images/1596890114104.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/images/1596890114270.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="assets/images/1596890122537.jpeg" style="width:100%">
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Dots for navigation -->
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </article>
+
+                    <!-- Project: V12 Engine Design -->
+                    <article class="post">
+                        <header class="major">
+                            <h3>V12 Engine Design and Animation</h3>
+                        </header>
+                        <img src="assets/images/v12_engine.gif" alt="V12 Engine Animation" style="width:100%; height:auto;">
+                    </article>
+
+                    <!-- Project: McLaren MP4 Body Design -->
+                    <article class="post">
+                        <header class="major">
+                            <h3>McLaren MP4 Body Design and Animation</h3>
+                        </header>
+                        <img src="assets/images/mclaren_mp4.gif" alt="McLaren MP4 Body Animation" style="width:100%; height:auto;">
+                    </article>
+                </section>
+
+                <!-- Publications Section -->
+                <section id="publications">
+                    <header class="major">
+                        <h2>Publications</h2>
+                    </header>
+                    <div class="publications-list">
+                        <article class="publication">
+                            <img src="assets/images/publication_placeholder.jpg" alt="Bioinspired Smell Sensors" />
+                            <header>
+                                <h3>Review of Bioinspired Smell Sensors Based on Understudied Animal Olfactory Systems</h3>
+                            </header>
+                            <p>Status: Ongoing</p>
+                        </article>
+                        <article class="publication">
+                            <img src="assets/images/publication_placeholder.jpg" alt="Advanced Human Detection" />
+                            <header>
+                                <h3>Advanced Human Detection in Low Light Environments Using Thermal Imaging</h3>
+                            </header>
+                            <p>Status: Under Review (ICRA 2025)</p>
+                        </article>
+                        <article class="publication">
+                            <img src="assets/images/publication_placeholder.jpg" alt="Robotic Dinosaur Skeleton" />
+                            <header>
+                                <h3>Biomimetic Design of an Oryctodromeus-Inspired Robotic Dinosaur Skeleton</h3>
+                            </header>
+                            <p>Status: Accepted (ASME IMECE 2024)</p>
+                        </article>
+						<!-- Publication 4 (Published with Image Below the Content) -->
+						<article class="publication">
+							<a href="https://ieeexplore.ieee.org/abstract/document/10564247" target="_blank">
+								<img src="assets/images/publication_placeholder.jpg" alt="Autonomous Surveillance Breakthrough" />
+							</a>
+							<header>
+								<h3>Autonomous Surveillance Breakthrough by Implementing Facial Recognition in Dog Robots</h3>
+							</header>
+							<p>This published work demonstrates a major breakthrough in autonomous surveillance systems by integrating facial recognition technology into dog robots for enhanced security applications.</p>
+							<p><strong>Status:</strong> Published (IEEE, June 2024) - <a href="https://ieeexplore.ieee.org/abstract/document/10564247" target="_blank">Read More</a></p>
+
+							<!-- Dog Robot Image (Original Size) -->
+							<img src="images/dog.jpg" alt="Dog Robot" class="original-size-image">
+						</article>
+
+						<!-- Styles for displaying the original size of the image below the content -->
+						<style>
+							.original-size-image {
+								display: block;
+								max-width: 50%;
+								height: auto;
+								margin-top: 1.5rem;
+								margin: 1.5rem auto 0 auto;  /* Center the image horizontally */
+							}
+						</style>
+
+
+
+                        <!-- Publication 5 (Published with Hover Effect) -->
+                        <article class="publication">
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360544223012756" target="_blank">
+                                <img src="images/publication_placeholder.jpg" alt="Predicting Municipal Solid Waste Gasification" />
+                            </a>
+                            <header>
+                                <h3>Predicting Municipal Solid Waste Gasification Using Machine Learning</h3>
+                            </header>
+                            <p>Published in the Journal of Energy, this paper presents a machine learning-based model for predicting municipal solid waste gasification processes, contributing to energy recovery innovations.</p>
+                            <p><strong>Status:</strong> Published (Journal of Energy, Sep. 2023) - <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360544223012756" target="_blank">Read More</a></p>
+                            
+                            <!-- Hover Image for Gasification -->
+                            <img src="images/gasification.jpg" alt="Gasification Process" class="hover-image">
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <div class="footer-container">
+                        <section class="contact-info">
+                            <div class="contact-item">
+                                <h3>Address</h3>
+                                <p>Robotics Lab, Idaho State University<br>Idaho, USA</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p><a href="tel:2089152106">208-915-2106</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:amirhafezi@isu.edu">amirhafezi@isu.edu</a></p>
+                            </div>
+                        </section>
+
+                        <section class="social-links">
+                            <h3>Connect with Me</h3>
+                            <ul class="icons alt">
+                                <li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </footer>
+
+            </div>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+            <!-- Slideshow Script -->
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+    </body>
+</html>
