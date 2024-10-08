@@ -388,18 +388,21 @@
 				<img src="images/Screenshot_1.jpg" alt="Dog Robot" class="scaled-up-image">
 			</article>
 			
-			<!-- Styles for scaling the image by 50% -->
+			<!-- Styles for scaling the image and preventing overlap -->
 			<style>
 				.scaled-up-image {
 					display: block;
 					max-width: 50%; /* Original size */
 					height: auto;
-					margin-top: 1.5rem;
-					margin: 1.5rem auto 0 auto;  /* Center the image horizontally */
+					margin-top: 2rem; /* Add more margin to separate from text */
+					margin-bottom: 3rem; /* Extra margin at the bottom to prevent overlap with text below */
+					margin-left: auto;
+					margin-right: auto;  /* Center the image horizontally */
 					transform: scale(1.5); /* Scale the image by 50% */
-					transform-origin: center; /* Scale the image from the center */
+					transform-origin: center; /* Scale from the center */
 				}
 			</style>
+
 
 
 
