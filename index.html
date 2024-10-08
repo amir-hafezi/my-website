@@ -384,14 +384,21 @@
 				<p>This published work demonstrates a major breakthrough in autonomous surveillance systems by integrating facial recognition technology into dog robots for enhanced security applications.</p>
 				<p><strong>Status:</strong> Published (IEEE, June 2024) - <a href="https://ieeexplore.ieee.org/abstract/document/10564247" target="_blank">Read More</a></p>
 			
-				<!-- Dog Robot Image (Scaled Up by 50%) -->
-				<div class="image-container">
-					<img src="images/Screenshot_1.jpg" alt="Dog Robot" class="scaled-up-image">
-				</div>
+				<!-- Dog Robot Image (Scaled Up) -->
+				<img src="images/Screenshot_1.jpg" alt="Dog Robot" class="scaled-image">
 			</article>
 			
-			<!-- Styles for scaling the image and preventing overlap -->
+			<!-- Simple and effective styles for scaling and positioning the image -->
 			<style>
+	.scaled-image {
+		display: block;
+		width: 75%; /* Increased to 75% for a 50% scale up */
+		max-width: 100%; /* Keep image responsive within container */
+		height: auto;
+		margin: 2rem auto; /* Center the image with space above and below */
+	}
+</style>
+
 				.image-container {
 					/* Adjust the container to account for the scaled image */
 					width: 100%;  /* Ensures full container width */
