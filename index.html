@@ -385,23 +385,29 @@
 				<p><strong>Status:</strong> Published (IEEE, June 2024) - <a href="https://ieeexplore.ieee.org/abstract/document/10564247" target="_blank">Read More</a></p>
 			
 				<!-- Dog Robot Image (Scaled Up by 50%) -->
-				<img src="images/Screenshot_1.jpg" alt="Dog Robot" class="scaled-up-image">
+				<div class="image-container">
+					<img src="images/Screenshot_1.jpg" alt="Dog Robot" class="scaled-up-image">
+				</div>
 			</article>
 			
 			<!-- Styles for scaling the image and preventing overlap -->
 			<style>
+				.image-container {
+					/* Adjust the container to account for the scaled image */
+					width: 100%;  /* Ensures full container width */
+					text-align: center; /* Center image in the container */
+					margin-top: 2rem;
+					margin-bottom: 3rem;
+					overflow: hidden; /* Prevent overflow if necessary */
+				}
+			
 				.scaled-up-image {
-					display: block;
 					max-width: 50%; /* Original size */
-					height: auto;
-					margin-top: 2rem; /* Add more margin to separate from text */
-					margin-bottom: 3rem; /* Extra margin at the bottom to prevent overlap with text below */
-					margin-left: auto;
-					margin-right: auto;  /* Center the image horizontally */
 					transform: scale(1.5); /* Scale the image by 50% */
 					transform-origin: center; /* Scale from the center */
 				}
 			</style>
+
 
 
 
