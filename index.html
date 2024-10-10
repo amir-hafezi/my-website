@@ -230,10 +230,22 @@
                 <a href="index.html" class="logo">Amir Hafezi</a>
             </header>
 
+            <!-- Nav -->
+            
+                <ul class="icons">
+					<li><a href="mailto:amirhafezi@isu.edu" class="icon brands fa-google"><span class="label">Gmail</span></a></li>
+					<li><a href="mailto:amir.hafezi78@yahoo.com" class="icon fa-envelope"><span class="label">Yahoo Email</span></a></li>
+					<li><a href="https://www.linkedin.com/in/amir-hafezi/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+							
+				
+            </nav>
+
             <!-- Main Content -->
             <div id="main">
 
-                <!-- Experience Section -->
+                <!-- Featured Post (Experience) -->
                 <section id="experience">
                     <header class="major">
                         <h2>Experience</h2>
@@ -247,11 +259,34 @@
 							<li>Managed the 3D printing lab, ensuring accurate production of prototypes on time, improving lab efficiency by 20%.</li>
 							<li>Assisted in developing courses on Machine Learning and Nvidia Computer Vision for robotics applications.</li>
 						</ul>
+						<!-- Centered and doubled-size image -->
 						<img src="images/3dprinter.jpg" alt="3D Printing Lab" class="scaled-image" />
 					</article>
+
+					<!-- CSS for centering and scaling the image without overlapping -->
+					<style>
+						.scaled-image {
+							display: block;
+							margin: 1.5rem auto;  /* Center the image horizontally */
+							width: 100%;          /* Double the size by adjusting width */
+							max-width: 600px;      /* Set a max width to control the size */
+							height: auto;          /* Maintain the aspect ratio */
+						}
+					</style>
+
+
+
+                    <!-- Research Assistant -->
+                    <article class="post">
+                        <header class="major">
+                            <h3>Research Assistant - Idaho State University Robotics Lab (Fall 2023)</h3>
+                        </header>
+                        <li>Enhanced a commercial Dog Robot with sensors and custom software for security applications, funded by Idaho National Laboratory.</li>
+                        <a href="#" class="image main"><img src="images/cose-robot_3079.jpg" alt="Dog Robot Project" /></a>
+                    </article>
                 </section>
 
-                <!-- Projects Section -->
+                <!-- Projects -->
                 <section id="projects">
                     <header class="major">
                         <h2>Projects</h2>
@@ -333,7 +368,7 @@
 		
 		        <!-- Publication 2 -->
 		        <article class="publication">
-		            <img src="images/publication_placeholder.jpg" alt="Bioinspired Smell Sensors" />
+		            <img src="assets/images/publication_placeholder.jpg" alt="Bioinspired Smell Sensors" />
 		            <header>
 		                <h3>Review of Bioinspired Smell Sensors Based on Understudied Animal Olfactory Systems</h3>
 		            </header>
@@ -342,7 +377,7 @@
 		
 		        <!-- Publication 3 -->
 		        <article class="publication">
-		            <img src="images/publication_placeholder.jpg" alt="Advanced Human Detection" />
+		            <img src="assets/images/publication_placeholder.jpg" alt="Advanced Human Detection" />
 		            <header>
 		                <h3>Advanced Human Detection in Low Light Environments Using Thermal Imaging</h3>
 		            </header>
@@ -351,7 +386,7 @@
 		
 		        <!-- Publication 4 -->
 		        <article class="publication">
-		            <img src="images/publication_placeholder.jpg" alt="Robotic Dinosaur Skeleton" />
+		            <img src="assets/images/publication_placeholder.jpg" alt="Robotic Dinosaur Skeleton" />
 		            <header>
 		                <h3>Biomimetic Design of an Oryctodromeus-Inspired Robotic Dinosaur Skeleton</h3>
 		            </header>
@@ -362,7 +397,7 @@
 		        <!-- Publication 5 -->
 		        <article class="publication">
 		            <a href="https://ieeexplore.ieee.org/abstract/document/10564247" target="_blank">
-		                <img src="images/publication_placeholder.jpg" alt="Autonomous Surveillance Breakthrough" />
+		                <img src="assets/images/publication_placeholder.jpg" alt="Autonomous Surveillance Breakthrough" />
 		            </a>
 		            <header>
 		                <h3>Autonomous Surveillance Breakthrough by Implementing Facial Recognition in Dog Robots</h3>
@@ -453,7 +488,7 @@
                     }
                     slideIndex++;
                     if (slideIndex > slides.length) {slideIndex = 1}    
-                    for (i = 0; dots.length > i; i++) {
+                    for (i = 0; i < dots.length; i++) {
                         dots[i].className = dots[i].className.replace(" active", "");
                     }
                     slides[slideIndex-1].style.display = "block";  
